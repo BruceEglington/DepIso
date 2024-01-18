@@ -1,0 +1,36 @@
+object IWServerController: TIWServerController
+  OldCreateOrder = False
+  OnCreate = IWServerControllerBaseCreate
+  AuthBeforeNewSession = False
+  AppName = 'DepIso'
+  CharSet = 'UTF-8'
+  CacheExpiry = 5
+  ComInitialization = ciMultiThreaded
+  Compression.Enabled = True
+  Compression.Level = 6
+  Description = 'Deposit Isotope Database'
+  DebugHTML = False
+  DisplayName = 'IntraWeb (VCL for the Web) Application'
+  Log = loNone
+  EnableImageToolbar = False
+  ExceptionDisplayMode = smAlert
+  HistoryEnabled = False
+  InternalFilesURL = '/'
+  JavascriptDebug = False
+  PageTransitions = False
+  Port = 8092
+  RedirectMsgDelay = 0
+  ServerResizeTimeout = 0
+  ShowLoadingAnimation = True
+  SessionTimeout = 40
+  SSLOptions.NonSSLRequest = nsAccept
+  SSLOptions.Port = 0
+  SSLOptions.SSLVersion = sslv3
+  URLBase = '/depiso'
+  Version = '11.0.53'
+  OnBeforeDispatch = IWServerControllerBaseBeforeDispatch
+  OnNewSession = IWServerControllerBaseNewSession
+  AllowIE6 = False
+  Height = 310
+  Width = 342
+end
